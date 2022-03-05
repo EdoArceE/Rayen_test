@@ -1,0 +1,37 @@
+<div class="container-sm w-25 contenedor  rounded-3 pt-3 pb-5 " id="FormularioSignup">
+  <div class="row pb-2 ">
+    <div class="col-12 text-center ">
+      <h1 class="text-black">
+        Desafiogram
+      </h1>
+    </div>
+  </div>
+  <form (submit)="submit($event)">
+    <div class="row justify-content-around">
+      <div class="col-lg-9">
+        <div class="form-floating mb-1">
+          <input type="text" class="form-control" id="Email" placeholder="Nombre de Usuario">
+          <label for="Email">Nombre de Usuario</label>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-around">
+      <div class="col-lg-9 ">
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="PassInput" placeholder="Contreseña">
+          <label for="PassInput">Contreseña</label>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-around">
+      <div class="col text-center">
+        <button class="btn btn-primary" type="submit">Login</button>
+      </div>
+    </div>
+  </form>
+  <div class="row  text-center pb-2 pt-2">
+    <div class="col">
+      No tienes cuenta? <a [routerLink]="'../signup'">Signup</a>
+    </div>
+  </div>
+</div>
